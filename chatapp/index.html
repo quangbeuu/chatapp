@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat app</title>
+    <!-- Cách sử dụng tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="./assets/css/custom.css" />
+
+    <!-- Set up firebase -->
+    <!-- Firebase -->
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.8/firebase-app.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyBg0kKn0XTFNelIQzIGTognQucDBnrlm2Y",
+        authDomain: "chatapp-4582d.firebaseapp.com",
+        projectId: "chatapp-4582d",
+        storageBucket: "chatapp-4582d.appspot.com",
+        messagingSenderId: "693987368273",
+        appId: "1:693987368273:web:899cf4a3ac9a6d78208770",
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+    </script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
